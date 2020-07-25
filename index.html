@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.6">
+    <title>Hero association | Form </title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <meta name="theme-color" content="#333333">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <!-- Custom styles for this template -->
+    <link href="main.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+    <form class="form-signin" action="/" method="POST">
+        <img class="mb-4" src="images/Herobadge.png" alt="hero logo" width="200" height="200">
+        <h1 class="h3 mb-3 font-weight-normal main-header">Apply for Hero</h1>
+
+        <input type="text" name="firstN" class="form-control top" placeholder="First Name" required autofocus>
+        <input type="text" name="lastN" class="form-control middle" placeholder="Last Name" required>
+        <input list="levels"  id="power-level" name="level" class="form-control power-level"
+            placeholder="Power Level between 1 - 100 ,eg: 68 " pattern="[0-9]{1,}" required>
+        <datalist id="levels">
+            <option value="30">
+            <option value="70">
+            <option value="100">
+          
+
+
+        </datalist>
+        <input type="email"  name="email" class="form-control bottom" placeholder="Email address" required>
+        <button class="button mt-4 btn btn-lg btn-warning btn-block" type="submit">Sign in</button>
+
+
+        <p class="mt-5 mb-3 text-muted">&copy; 2019-2020 hero association</p>
+        <script src="js/index.js"></script>
+
+
+    </form>
+</body>
+
+</html>
