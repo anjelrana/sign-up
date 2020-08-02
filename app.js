@@ -43,10 +43,10 @@ app.post("/", function (req, res) {
     const jsonData = JSON.stringify(data);
 
 
-    const url = "https://us10.api.mailchimp.com/3.0/lists/a3fbaf830b"
+    const url = "https://us10.api.mailchimp.com/3.0/lists/list_id"
     const options = {
         method: "POST",
-        auth: "apikey:b6fb94b570f0343acb193145ab0eeab3-us10"
+        auth: "apikey:api key from mail chimp"
     }
     const request = https.request(url, options, function (response) {
        
@@ -79,5 +79,3 @@ app.listen(process.env.PORT ||3000, function () {
 })
 
 
-// api key b6fb94b570f0343acb193145ab0eeab3-us10
-// list id a3fbaf830b
